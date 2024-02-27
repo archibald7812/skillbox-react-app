@@ -1,6 +1,6 @@
 import { Layout, Menu } from "antd";
 import { Content, Footer, Header } from "antd/es/layout/layout";
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "./index.module.scss";
 
