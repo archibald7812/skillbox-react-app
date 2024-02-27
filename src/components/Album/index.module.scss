@@ -1,0 +1,22 @@
+.root {
+	height: 290px;
+	width: 250px;
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.img {
+			height: 250px;
+			width: 250px;
+		}
+	}
+	.navigation {
+		font-weight: bold;
+		display: flex;
+		justify-content: space-around;
+		.span {
+			cursor: pointer;
+		}
+	}
+}

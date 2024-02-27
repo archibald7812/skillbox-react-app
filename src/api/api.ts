@@ -1,17 +1,13 @@
-import {
-  deletePost,
-  getPost,
-  getPosts,
-  patchPost,
-  updatePost
-} from './PostsApi';
+import { getAlbums, getPhotos } from "./AlbumsApi";
+import { getPost, getPosts } from "./PostsApi";
+import { getTodos } from "./TodosApi";
 
 const Api = {
-  getPosts,
-  getPost,
-  updatePost,
-  patchPost,
-  deletePost
+	getPosts,
+	getPost,
+	getAlbums,
+	getPhotos,
+	getTodos,
 };
 
 export default Api;
