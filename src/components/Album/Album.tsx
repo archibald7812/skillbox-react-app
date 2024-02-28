@@ -1,7 +1,7 @@
 import { FC, useCallback, useEffect, useState } from "react";
 import { Photos } from "../../models";
 import Api from "../../api/api";
-import styles from "./index.module.scss";
+import "./index.css";
 
 type Props = {
 	albumId: number;
@@ -20,10 +20,10 @@ const Album: FC<Props> = ({ albumId }: Props) => {
 	}, [getData]);
 
 	return (
-		<div className={styles.root}>
+		<div className="album-container">
 			{data.map((photo) => (
-				<div className={styles.container}>
-					<img src={photo.url} className={styles.img} />
+				<div className="photo-container">
+					<img src={photo.url} className="photo-img" />
 				</div>
 			))}
 		</div>

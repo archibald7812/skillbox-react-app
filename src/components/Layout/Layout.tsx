@@ -2,7 +2,7 @@ import { Layout, Menu } from "antd";
 import { Content, Footer, Header } from "antd/es/layout/layout";
 import { FC, ReactNode } from "react";
 import { Link, Outlet } from "react-router-dom";
-import styles from "./index.module.scss";
+import "./index.css";
 
 type Props = {
 	children?: ReactNode[];
@@ -17,8 +17,8 @@ const items = [
 
 const CusomLayout: FC<Props> = () => {
 	return (
-		<Layout className={styles.root}>
-			<Header className={styles.header}>
+		<Layout className="layout">
+			<Header className="header">
 				<Menu
 					theme="dark"
 					mode="horizontal"
@@ -27,10 +27,10 @@ const CusomLayout: FC<Props> = () => {
 					style={{ flex: 1, minWidth: 0 }}
 				/>
 			</Header>
-			<Content className={styles.main}>
+			<Content className="content">
 				<Outlet />
 			</Content>
-			<Footer className={styles.footer}>Footer</Footer>
+			<Footer className="footer">Footer</Footer>
 		</Layout>
 	);
 };
